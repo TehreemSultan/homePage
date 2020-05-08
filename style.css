@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*starting blue line design*/
+.starterDesign {
+  background-color: rgb(34, 85, 194);
+  text-align: center;
+}
+.btn-light {
+  background-color: rgb(240, 239, 239);
+}
+.btn-light:hover {
+  background-color: rgb(240, 239, 239);
+  color: black;
+}
+.hoverlink:hover {
+  text-decoration: none;
+  background-color: #038c9e;
+}
+/**/
+li .mainElement:hover,
+.active {
+  background-color: rgb(34, 85, 194);
+  color: white !important;
+  text-decoration: none;
+}
+.subElement a {
+  color: rgb(83, 83, 83);
+  text-decoration: none;
+  width: 100%;
+}
+
+.subElement:hover a {
+  color: white;
+}
+nav {
+  width: 100%;
+  height: 72px;
+  z-index: 1000;
+}
+nav #toggle ul,
+li {
+  z-index: 1;
+}
+.carousel-item {
+  position: sticky;
+}
+
+/*navbar*/
+@media only screen and (min-width: 992px) {
+  nav div ul li {
+    display: inline-block;
+    list-style-type: none;
+
+    margin: 15px 0 0 1px;
+
+    transition: 0.3s;
+  }
+  li > .mainElement {
+    display: inline-block;
+    color: black;
+    padding: 4px 8px;
+    border-radius: 15px;
+    transition: 0.5s;
+    font-weight: 500;
+  }
+
+  .sub {
+    display: none;
+    padding: 0;
+    position: absolute;
+    padding-top: 26px;
+    background-color: transparent;
+  }
+
+  .subElement {
+    display: block;
+    width: 120%;
+    padding: 10px 18px;
+    margin: 0;
+    background-color: white;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .subElement:hover {
+    background-color: rgb(34, 85, 194);
+    padding-left: 24px;
+    padding-right: 12px;
+    transition: 0.3s;
+  }
+
+  li:hover > ul {
+    display: block;
+  }
+  label {
+    visibility: hidden;
+  }
+}
+/**/
+/*navbar*/
+@media only screen and (max-width: 991px) {
+  label {
+    visibility: visible;
+  }
+  li {
+    list-style-type: none;
+    display: block;
+  }
+  nav {
+    padding: 0;
+    margin: 0;
+  }
+  nav .container {
+    display: block;
+    max-width: 100% !important;
+    padding: 0;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+  .logo {
+    padding-left: 5%;
+  }
+  li .mainElement {
+    font-weight: 500;
+    color: black;
+    display: block;
+    border-top: 1px solid rgb(189, 187, 187);
+    border-bottom: 1px solid rgb(189, 187, 187);
+    padding: 12px 15px;
+  }
+  ul {
+    background-color: white;
+  }
+  li .sub {
+    display: none;
+  }
+  .subElement {
+    font-weight: 500;
+    font-size: 13px;
+    padding: 8px 35px;
+    border-top: 1px solid rgb(189, 187, 187);
+    border-bottom: 1px solid rgb(189, 187, 187);
+  }
+  .subElement:hover {
+    background-color: rgb(34, 85, 194);
+    padding-left: 45px;
+    padding-right: 25px;
+  }
+  #toggle {
+    display: none;
+    margin-top: 17px;
+  }
+  #hb:checked ~ #toggle {
+    display: block;
+  }
+}
+.stickynavbar {
+  position: sticky !important;
+  top: 0px;
+  z-index: 1;
+}
+#btns {
+  background-color: rgba(136, 133, 133, 0.555);
+  text-decoration: none;
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  padding: 10px 17px;
+  color: white;
+  border-radius: 10px;
+  border-color: transparent;
+  z-index: 1;
+}
+.upbtn {
+  font-size: 30px;
+}

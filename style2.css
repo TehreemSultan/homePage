@@ -1,0 +1,141 @@
+.blue {
+  color: rgb(30, 30, 173);
+}
+.green {
+  color: rgb(9, 240, 9);
+}
+.light {
+  display: inline-block;
+  background-color: rgba(239, 244, 245);
+  width: 65px;
+  height: 50px;
+}
+.divalign {
+  text-align: center;
+  color: white;
+  width: 100%;
+
+  margin: 4px 2%;
+}
+.dflex {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/*intro------------*/
+#intro {
+  text-align: center;
+}
+
+@media screen and (min-width: 760px) {
+  .forMidPara {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+/*------------------*/
+
+.footersm {
+  border-radius: 100px;
+  background-color: rgb(71, 71, 241);
+  margin: 0 4px;
+}
+#btns {
+  background-color: rgba(136, 133, 133, 0.555);
+  text-decoration: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 10px;
+  border-color: transparent;
+  z-index: 1;
+}
+.outline {
+  margin: 0 auto;
+  width: 120px;
+  height: 35px;
+  border-bottom: 2px solid green;
+}
+.cardstyle {
+  padding: 10px 2px;
+  margin: 20px 5px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.15);
+}
+.cardstyle2 {
+  background-color: rgba(239, 244, 245);
+  padding: 15px 2px 15px 8px;
+  margin: 15px 0;
+  border: 2px solid rgb(227, 236, 238);
+}
+
+.imageG {
+  width: 100%;
+  margin: 5px 0px 5px 1px;
+  height: 200px;
+}
+.imghover img:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+@media only screen and (min-width: 500px) {
+  .imageG {
+    display: inline-block;
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .cardstyle {
+    display: inline-block;
+    width: 45%;
+  }
+  .cardstyle2 {
+    padding: 10px 2px 10px 5px;
+    margin: 10px 0;
+  }
+  .imageG {
+    display: inline-block;
+    width: 25%;
+  }
+}
+@media only screen and (min-width: 942px) {
+  .cardstyle2 {
+    display: inline-block;
+    width: 45%;
+  }
+  .width {
+    margin: 0 auto !important;
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .cardstyle {
+    display: inline-block;
+    width: 27%;
+  }
+  .imageG {
+    display: inline-block;
+    width: 18%;
+  }
+}
+
+.font-weight {
+  font-weight: 630;
+}
+
+.socialmedia {
+  color: white;
+  margin: 8px 5px;
+  padding: 8px 10px;
+}
+.socialmedia:hover {
+  color: white;
+  background-color: blue;
+  text-decoration: none;
+}

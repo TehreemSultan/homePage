@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-color: rgb(233, 240, 236);
+      }
+      section {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        z-index: -1;
+      }
+      figure {
+        height: 400px;
+        width: 95%;
+        background-color: cadetblue;
+        margin: 12px;
+      }
+      @media only screen and (min-width: 992px) {
+        figure {
+          display: inline-block;
+          height: 400px;
+          width: 45%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-------------------------header------------------------------->
+
+    <!------------------------------------starting---------------------->
+    <div class="container-fluid starterDesign pb-lg-0 pt-lg-1" id="pagetop">
+      <div class="row">
+        <div class="col-lg-3 pt-1 text-lg-right">
+          <a href="#" class="fa fa-facebook text-white p-2 hoverlink"></a>
+          <a href="#" class="fa fa-twitter text-white p-2 hoverlink"></a>
+          <a href="#" class="fa fa-instagram text-white p-2 hoverlink"></a>
+          <a href="#" class="fa fa-youtube text-white p-2 hoverlink"></a>
+          <a href="#" class="fa fa-whatsapp text-white p-2 hoverlink"></a>
+        </div>
+        <div class="col-lg-5 pt-1 pb-0 text-lg-center">
+          <p class="text-white">
+            Millions of people's life has changed, millions more awaiting your
+            donation
+          </p>
+        </div>
+        <div class="col-lg-4 pt-1 pb-2 text-lg-left">
+          <button class="btn btn-light btn-sm btn-outline-dark rounded-0">
+            UK Donor
+          </button>
+          <button class="btn btn-light btn-sm btn-outline-dark rounded-0">
+            Donate Now
+          </button>
+          <button class="btn btn-light btn-sm btn-outline-dark rounded-0">
+            SMIT Results
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------>
+    <!--------------------------------nav bar--------------------------->
+
+    <nav class="bg-light stickynavbar">
+      <div class="container">
+        <div class="d-inline-block logo">
+          <img
+            src="saylani-logo.png"
+            alt="saylani logo"
+            width="150px"
+            heigt="200px"
+          />
+        </div>
+
+        <input type="checkbox" id="hb" style="visibility: hidden;" />
+        <label for="hb" class="d-inline-block float-right p-3"
+          ><i
+            class="fa fa-align-justify"
+            style="font-size: 30px; color: rgb(105, 103, 103);"
+          ></i
+        ></label>
+
+        <div class="d-lg-inline-block float-lg-right" id="toggle">
+          <ul class="float-lg-right mb-lg-2">
+            <li><a class="mainElement" href="index.html">Home</a></li>
+            <li>
+              <a
+                class="mainElement"
+                href="#"
+                onclick="toggle_visibility('aboutSub')"
+                >About<i class="pl-1 fa fa-angle-down"></i
+              ></a>
+              <ul class="sub" id="aboutSub">
+                <li class="subElement"><a href="#">Introduction</a></li>
+                <li class="subElement"><a href="#">Chairman Message</a></li>
+                <li class="subElement"><a href="#">Annual Report</a></li>
+              </ul>
+            </li>
+            <li>
+              <a
+                class="mainElement"
+                href="#"
+                onclick="toggle_visibility('saylaniSub')"
+                >Saylani services<i class="pl-1 fa fa-angle-down"></i
+              ></a>
+              <ul class="sub" id="saylaniSub">
+                <li class="subElement"><a href="#">Education</a></li>
+                <li class="subElement"><a href="#">Medical</a></li>
+                <li class="subElement"><a href="#">Welfare</a></li>
+                <li class="subElement">
+                  <a href="#">Hajj Application Form</a>
+                </li>
+                <li class="subElement">
+                  <a href="#">Saylani Dastarkhawn</a>
+                </li>
+                <li class="subElement"><a href="#">Saylani RO plant</a></li>
+                <li class="subElement"><a href="#">Online Sadqah</a></li>
+                <li class="subElement">
+                  <a href="#">Online Taweezat/Istekhara</a>
+                </li>
+                <li class="subElement"><a href="#">Saylani Job Bank</a></li>
+                <li class="subElement">
+                  <a href="#">Online Quran Academy</a>
+                </li>
+                <li class="subElement"><a href="#">Books</a></li>
+                <li class="subElement"><a href="#">Online Masjid</a></li>
+              </ul>
+            </li>
+            <li>
+              <a
+                class="mainElement"
+                href="#"
+                onclick="toggle_visibility('futureSub')"
+                >Future projects<i class="pl-1 fa fa-angle-down"></i
+              ></a>
+              <ul class="sub" id="futureSub">
+                <li class="subElement"><a href="#">Saylani University</a></li>
+                <li class="subElement"><a href="#">Saylani City</a></li>
+              </ul>
+            </li>
+            <li><a class="mainElement" href="#">Media</a></li>
+            <li><a class="mainElement" href="#">News</a></li>
+            <li>
+              <a
+                class="mainElement"
+                href="#"
+                onclick="toggle_visibility('donationSub')"
+                >Donation<i class="pl-1 fa fa-angle-down"></i
+              ></a>
+              <ul class="sub" id="donationSub">
+                <li class="subElement"><a href="#">Bank Details</a></li>
+                <li class="subElement"><a href="#">Sadqah</a></li>
+                <li class="subElement"><a href="#">Aqiqa</a></li>
+                <li class="subElement"><a href="#">Other Donations</a></li>
+                <li class="subElement"><a href="#">Corona Effecties</a></li>
+                <li class="subElement"><a href="#">Ramazan-2020</a></li>
+                <li class="subElement"><a href="#">Contact Us</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <script type="text/javascript">
+      function toggle_visibility(id) {
+        var width = screen.availWidth;
+        var x = window.matchMedia("(max-width: 991px)");
+        var e = document.getElementById(id);
+        if (x.matches) {
+          if (e.style.display == "block") e.style.display = "none";
+          else e.style.display = "block";
+        }
+      }
+    </script>
+    <!--top button-->
+    <a id="btns" href="#pagetop"><i class="upbtn fa fa-angle-up"></i></a>
+
+    <!------------->
+    <!--------------------------------------------------------------------------------->
+    <div style="text-align: center; position: relative; z-index: -1;">
+      <h1 class="blue">IMAGE <span class="green">GALLERY</span></h1>
+      <div class="outline">
+        <div class="light" style="background-color: rgb(233, 240, 236);">
+          <img src="headingsub.png" alt="" width="40px" height="40px" />
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <figure>
+        <img src="ig1.jpg" alt="image 1" width="100%" height="100%" id="img1" />
+      </figure>
+
+      <figure>
+        <img src="ig2.jpg" alt="image 2" width="100%" height="100%" id="img2" />
+      </figure>
+      <figure>
+        <img src="ig3.jpg" alt="image 3" width="100%" height="100%" id="img3" />
+      </figure>
+      <figure>
+        <img src="ig4.jpg" alt="image 4" width="100%" height="100%" id="img4" />
+      </figure>
+      <figure>
+        <img src="ig5.jpg" alt="image 5" width="100%" height="100%" id="img5" />
+      </figure>
+    </section>
+
+    <!----------------------------------------footer----------------------------------->
+
+    <div class="container-fluid bg-dark text-white py-5">
+      <div class="container row" style="margin: 0 auto;">
+        <div class="col-md-4">
+          <p>
+            Head Office,<br />
+            A-25, Bahadurabad Chowrangi Karachi, Pakistan
+            <br />
+            <br />
+            UAN: 111-729-526 (+0092-213) 4130786-90 <br />
+            CELL: 92-311-1729526 <br />
+            USA NO +1(716)941 7792 <br />
+            UK NO (+44)115 970 6256 <br />
+            info@saylaniwelfare.com
+          </p>
+        </div>
+
+        <div class="col-md-4">
+          <h5>Useful Links</h5>
+          <hr color="white" style="opacity: 0.5;" />
+        </div>
+
+        <div class="col-md-4">
+          <h5>Connect With Us</h5>
+
+          <div class="text-center d-lg-flex justify-content-start">
+            <a href="#" class="fa fa-facebook socialmedia footersm"></a>
+            <a href="#" class="fa fa-twitter socialmedia footersm"></a>
+            <a href="#" class="fa fa-instagram socialmedia footersm"></a>
+            <a href="#" class="fa fa-youtube socialmedia footersm"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container-fluid py-2"
+      style="background-color: rgb(34, 85, 194);"
+    >
+      <div class="container">
+        <p style="color: white;">copyright &copy; saylani welfare</p>
+      </div>
+    </div>
+    <!--------------------------------------------------------------------------------->
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
